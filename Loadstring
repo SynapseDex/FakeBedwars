@@ -1,1 +1,83 @@
+-- Gui to Lua
+-- Version: 3.2
 
+-- Instances:
+
+local KeySystemGUI1 = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TItleLabel = Instance.new("TextLabel")
+local InputKey = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
+local MoveToCheckPoint2 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local CopyKeyLink = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+
+--Properties:
+
+KeySystemGUI1.Name = "KeySystemGUI1"
+KeySystemGUI1.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+KeySystemGUI1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = KeySystemGUI1
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.Position = UDim2.new(0.263157904, 0, 0.216624677, 0)
+Frame.Size = UDim2.new(0, 650, 0, 450)
+
+UICorner.CornerRadius = UDim.new(0, 100)
+UICorner.Parent = Frame
+
+TItleLabel.Name = "TItleLabel"
+TItleLabel.Parent = Frame
+TItleLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TItleLabel.BackgroundTransparency = 1.000
+TItleLabel.Position = UDim2.new(0.346153855, 0, 0.111111112, 0)
+TItleLabel.Size = UDim2.new(0, 200, 0, 50)
+TItleLabel.Font = Enum.Font.Unknown
+TItleLabel.Text = "Fake Bedwars Key System"
+TItleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TItleLabel.TextScaled = true
+TItleLabel.TextSize = 50.000
+TItleLabel.TextWrapped = true
+
+InputKey.Name = "InputKey"
+InputKey.Parent = Frame
+InputKey.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InputKey.Position = UDim2.new(0.346153855, 0, 0.444444448, 0)
+InputKey.Size = UDim2.new(0, 200, 0, 50)
+InputKey.Font = Enum.Font.Unknown
+InputKey.Text = "Input Key Here"
+InputKey.TextColor3 = Color3.fromRGB(0, 0, 0)
+InputKey.TextSize = 25.000
+
+UICorner_2.CornerRadius = UDim.new(0, 100)
+UICorner_2.Parent = InputKey
+
+MoveToCheckPoint2.Name = "MoveToCheckPoint2"
+MoveToCheckPoint2.Parent = Frame
+MoveToCheckPoint2.BackgroundColor3 = Color3.fromRGB(0, 255, 8)
+MoveToCheckPoint2.Position = UDim2.new(0.346153855, 0, 0.600000024, 0)
+MoveToCheckPoint2.Size = UDim2.new(0, 200, 0, 50)
+MoveToCheckPoint2.Font = Enum.Font.Unknown
+MoveToCheckPoint2.Text = "Move To Check Point 2"
+MoveToCheckPoint2.TextColor3 = Color3.fromRGB(0, 0, 0)
+MoveToCheckPoint2.TextSize = 25.000
+MoveToCheckPoint2.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 100)
+UICorner_3.Parent = MoveToCheckPoint2
+
+CopyKeyLink.Name = "CopyKeyLink"
+CopyKeyLink.Parent = Frame
+CopyKeyLink.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CopyKeyLink.Position = UDim2.new(0.346153855, 0, 0.75555557, 0)
+CopyKeyLink.Size = UDim2.new(0, 200, 0, 50)
+CopyKeyLink.Font = Enum.Font.Unknown
+CopyKeyLink.Text = "Copy Key Link"
+CopyKeyLink.TextColor3 = Color3.fromRGB(0, 0, 0)
+CopyKeyLink.TextSize = 25.000
+CopyKeyLink.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0, 100)
+UICorner_4.Parent = CopyKeyLink
